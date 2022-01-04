@@ -55,7 +55,7 @@ if ( args["output"] ):
     if ( not os.path.exists(output_dir_temporal) ):
         os.makedirs( output_dir_temporal )
 if ( args["threshold"] ):
-    tmp = int(args["threshold"])
+    tmp = float(args["threshold"])
     if ( tmp < 0 ):
         print( "threshold must be > 0; using default value" )
     else:
