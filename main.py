@@ -55,24 +55,27 @@ if ( args["output"] ):
     if ( not os.path.exists(output_dir_temporal) ):
         os.makedirs( output_dir_temporal )
 if ( args["threshold"] ):
-    if ( int(args["threshold"]) < 0 ):
+    tmp = int(args["threshold"])
+    if ( tmp < 0 ):
         print( "threshold must be > 0; using default value" )
     else:
-      threshold = args["threshold"]      
+      threshold = tmp      
 if ( args["spatial_feature"] ):
     spatial_feature = args["spatial_feature"]    
 if ( args["size"] ):
-    if ( int(args["size"]) < 0 ):
+    tmp = int(args["size"])
+    if ( tmp < 0 ):
         print( "size must be >0; using default value" )
     else:
-      size = args["size"]
+      size = tmp
 if ( args["resize"] ):
-    if ( int(args["resize"]) != 0 ):
+    tmp = int(args["resize"])
+    if ( tmp != 0 ):
         resize = 1
     else:
-      resize = args["resize"]      
+      resize = tmp      
 print( "" )
 
 #Please set the 'size' parameter in spatial and temporal folder if you want to resize the dataset images 
-spatial_op.spatial_redundancy( input_dir, output_dir_spatial, spatial_feature, threshold, size=8, resize=1, filetype="*.png")
-temporal_op.temporal_redundancy( input_dir, output_dir_temporal, threshold, size=8, resize=1, filetype="*.png")
+spatial_op.spatial_redundancy( input_dir, output_dir_spatial, spatial_feature, threshold, size, resize, filetype="*.png")
+temporal_op.temporal_redundancy( input_dir, output_dir_temporal, threshold, size, resize, filetype="*.png")

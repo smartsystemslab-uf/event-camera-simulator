@@ -33,7 +33,7 @@ def spatial_redundancy(dir_src, dir_dest, spatial_feature, th, size=8, resize=1,
             if ( spatial_feature == 'edge' ):
               img_out, non_roi = spatial.edge_feature_point(img, size, th)
             elif ( spatial_feature == 'MAD' ): 
-              #print( "MAD" )
+              print( "MAD" )
               img_out, non_roi = spatial.mean_absolute_dev(img, size)
             else:
               print( "unknown spatial feature; returning input image" )

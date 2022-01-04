@@ -8,7 +8,7 @@ This is python-based simulator for an event-camera. The simulator draws visual a
 
 ## HOW TO RUN 
 ````
-$ conda activate event-camera-simulator # make sure you have done the PREQUISITE step
+$ conda activate event-camera-simulator # make sure you have done the PREQUISITES step
 $ python3 main.py
 $ conda deactivate # when done
 ````
