@@ -12,7 +12,7 @@ Install opencv library
 
 ## HOW TO RUN 
 ````
-$ conda activate event-camera-simulator # make sure you have done the PREQUISITES step
+$ conda activate new_env_name # make sure you have done the PREQUISITES step
 $ python main.py
 $ conda deactivate # when done
 ````
