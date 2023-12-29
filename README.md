@@ -22,7 +22,7 @@ It will take all the images provided in the image_data/ directory and generate s
 The relevant data is generated in the *_output folders.  
 
 You can also use command line arguments such as:  
-````$ python3 main.py -i ./image_data -o ./ -s MAD -t 0.09```` # this appears to be how results in the spatial_output dir (hash 212a17a7d0b6dce099a7b6a0a4ac9593a0a65374) were made  
+````$ python main.py -i ./image_data -o ./ -s MAD -t 0.09```` # this appears to be how results in the spatial_output dir (hash 212a17a7d0b6dce099a7b6a0a4ac9593a0a65374) were made  
 See main.py for more details.
 
 ## DESCRIPTION
