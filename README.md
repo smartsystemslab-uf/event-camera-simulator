@@ -4,12 +4,15 @@ This is python-based simulator for an event-camera. The simulator draws visual a
 
 ## PREREQUISITES
 
-````$ conda install -f environment.yaml````
+````$ conda env create -f environment.yml -n new_env_name````
+Remember to define a new environment name in this step.
+````$ pip install opencv-python````
+Install opencv library
 
 ## HOW TO RUN 
 ````
 $ conda activate event-camera-simulator # make sure you have done the PREQUISITES step
-$ python3 main.py
+$ python main.py
 $ conda deactivate # when done
 ````
 
